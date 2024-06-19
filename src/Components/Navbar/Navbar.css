@@ -1,0 +1,76 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background:white;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap :10px
+
+}
+
+.nav-logo p {
+
+    color:green;
+    font-size:38px ;
+    font-weight: 700;
+}
+.nav-profile{
+    width: 90px;
+}
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Optional: Add border */
+  }
+
+@media(max-width:1280px)
+{
+.nav-logo img{
+    width: 40px;
+}
+
+.nav-logo p{
+    font-size: 25px;
+}
+}
+
+@media(max-width:800px)
+{
+    .navbar{
+        width: 100vh;
+        padding: 15px 30px;
+    }
+
+    .nav-logo{
+        width: 180px;
+    }
+    .nav-logo img{
+        width: 50px;
+    }
+    .nav-logo p{
+        font-size: 35px;
+    }
+    .nav-profile{
+        width:75px;
+    }
+
+}
+@media(max-width:500px)
+{
+    .nav-logo{
+        transform: scale(0.5);
+    }
+
+}
